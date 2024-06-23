@@ -16,7 +16,7 @@ export default async function execute(tabId) {
         const [result] = await browser.tabs.executeScript({
             allFrames: false,
             code:
-                "(function () { return document.querySelectorAll('script')[2].innerText; })();",
+                "(function () { return document.querySelectorAll('script')[3].innerText; })();",
         });
 
         let link;
